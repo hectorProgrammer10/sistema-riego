@@ -1,3 +1,92 @@
+.borde{
+    border: 1px solid black;
+}
+
+.caja{
+    height: 50rem;
+    padding: 3rem;
+}
 .container{
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.main{
     text-align: center;
+}
+.titulos{
+    font-size: 2rem;
+}
+
+.subtitulos{
+    font-size: 2rem;
+    color: orange;
+}
+
+body {
+  background-image: url("/src/images/fondo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-shadow: 2px 1px 1px black;
+} 
+
+.textoGrande{
+    font-size: 4rem;
+    color: orange;
+}
+
+h1{
+    color: #E06C75;
+}
+
+.imageR{
+    height: 20%;
+    background-image: url("/src/images/fondo2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+} 
+
+.info_left{
+    background-color: rgba(250, 235, 215, 0.4);
+    width: 25%;
+    padding: 3rem;
+    text-align: justify;
+    margin-right: 2rem;
+    text-shadow: 1px 1px 0px black;
+    border-radius: 1rem;
+}
+.info_right{
+    margin-left: 3rem;
+    width: 25%;
+    background-color: rgba(250, 235, 215, 0.4);
+    padding: 2rem;
+    text-align: justify;
+    text-shadow: 1px 1px 0px black;
+    border-radius: 1rem;
+}
+
+img{
+    width: 100%;
+}
+
+.info_right_bottom{
+    height: auto;
+    background-color: #CFE1D4;
+    text-align: justify;
+    padding: 1rem;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+}
+#imgR{
+    block-size: 50%;
+    width: 80%;
+}
+.p{
+    font-weight: bold;
+    font-size: large
 }

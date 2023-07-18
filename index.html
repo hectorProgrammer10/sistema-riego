@@ -1,19 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/css/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/css/index.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="caja">
-        <div class="container">
-            <h1>Información traida desde la ras: </h1>
-            <div id="info">
-            </div>
+      <div class="container">
+        <div class="info_left">
+          <h3>¿Cómo crece el rábano?</h3>
+          <p>
+            <li>Nacimiento:</li>
+            este es el período de la siembra de rábano hasta la aparición de la
+            primer hoja, en otras palabras, la la germinación del rábano. De 3 a
+            6 días.<br /><br />
+            <li>Crecimiento y desarrollo:</li>
+            después de que emerge el rábano aparecerán hojas nuevas cada 3 días
+            en condiciones normales. También crecerá la raíz carnosa y se
+            desarrollará su follaje hasta la etapa de maduración.<br /><br />
+            <li>Maduración:</li>
+            se da en el día 35 aproximadamente, aquí la planta ya llegó a su
+            madurez fisiológica.<br /><br />
+            <li>Cosecha:</li>
+            Dependiendo de la variedad de rábano estará listo para su cosecha,
+            puede ser a los 30 días a partir de la siembra.
+          </p>
+          <img src="src/images/imageLeft.png" alt="imageLeft" />
         </div>
+        <div>
+          <div class="main">
+            <div class="textoGrande">Como esta la plantita?</div>
+            <div class="infoTemperatura">
+              <h1>Temperatura</h1>
+              <div id="temperatura" class="titulos">Bien</div>
+              <div id="temperaturaGrados" class="subtitulos">##</div>
+            </div>
+            <div class="infoHumedad">
+              <h1>Humedad</h1>
+              <div id="humedad" class="titulos">Bien</div>
+              <div id="humedadPorcentaje" class="subtitulos">##</div>
+            </div>
+            <div class="infoLuz">
+              <h1>Luz</h1>
+              <div id="luz" class="titulos">Bien</div>
+            </div>
+          </div>
+          <div class="imageR"></div>
+        </div>
+        <div class="info_right">
+          <h3>Características del rábano:</h3>
+          <p>
+            El rábano es una hortaliza conocida alrededor del mundo, siendo
+            parte importante en la alimentación de muchas poblaciones. Una de
+            las características principales que tiene el rábano es su color de
+            piel, dependiendo de su variedad será su color: negro, morado, rojo
+            o blanco. El rábano de color rojo es el más común y usado por varios
+            países.
+          </p>
+          <div class="info_right_bottom">
+            <p>Nombre científico: <span class="p">Raphanus sativus</span></p>
+            <p>Familia: <span class="p">Brassicaceae</span></p>
+            <p>Origen: <span class="p">Mediterráneo, China y Japón</span></p>
+          </div>
+          <img src="src/images/imageRight.png" alt="imageLeft" id="imgR" />
+        </div>
+      </div>
     </div>
-</body>
-<script src="src/js/main.js"></script>
+  </body>
+  <script src="src/js/main.js"></script>
 </html>
