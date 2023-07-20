@@ -49,7 +49,7 @@ function cambiar(){
 
 function main(){
   pintar();
-  
+  mostrarClima();
 }
 
 function pintar(){
@@ -74,4 +74,41 @@ function pintar(){
   else{
     luz.style.color= "red"
   }
+}
+
+function mostrarClima(){
+  let imprimir = document.getElementById("temperaturaGrados");
+  let imprimir2 = document.getElementById("humedadPorcentaje");
+  let ciudad= 'Suchiapa';
+  let pais= 'mx'
+  apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${ciudad},${pais}&APPID=27da3742e70d879e3b845c9d23567f58`;
+
+  fetch(apiUrl)
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data);
+
+      const weatherDescription = data.weather[0].description;
+      const temperature = data.main.temp;
+      const humedad = data.main.humidity;
+
+      // Convertir la temperatura de Kelvin a Celsius
+      const temperatureCelsius = temperature - 273.15;
+
+      // Mostrar el clima actual en el elemento HTML
+      console.log(
+        `Clima: ${weatherDescription}, Temperatura: ${temperatureCelsius.toFixed(
+          1
+        )}°C`
+      );
+      imprimir.style.color = "orange";
+      imprimir.innerHTML = `${temperatureCelsius.toFixed(
+        1
+      )}°C`;
+      imprimir2.innerHTML = `${humedad}%`;
+    })
+    .catch((error) => {
+      console.log("Error al obtener el clima:", error);
+    });
+
 }
