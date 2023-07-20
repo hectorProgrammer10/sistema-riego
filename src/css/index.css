@@ -120,9 +120,9 @@ input{
     border: 1px solid #E06C75;
 }
 input:focus{
-    margin: 1rem;
-    height: 2rem;
-    padding: 6px;
+    /* margin: 1rem;
+    height: 2rem; */
+    padding-left: 6px;
 }
 button{
     background-color: #E06C75;

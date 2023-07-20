@@ -77,6 +77,8 @@ function pintar(){
 }
 
 function mostrarClima(){
+  let estadoTemperarura = document.getElementById("temperatura");
+  let estadoHumedad = document.getElementById("humedad");
   let imprimir = document.getElementById("temperaturaGrados");
   let imprimir2 = document.getElementById("humedadPorcentaje");
   let ciudad= 'Suchiapa';
@@ -101,7 +103,11 @@ function mostrarClima(){
           1
         )}°C`
       );
-      imprimir.style.color = "orange";
+      // console.log(temperatureCelsius)
+      // if(temperatureCelsius >= 15 && temperatureCelsius <= 25){
+      //   estadoTemperarura.innerHTML = `Bien`;
+
+      // }
       imprimir.innerHTML = `${temperatureCelsius.toFixed(
         1
       )}°C`;
